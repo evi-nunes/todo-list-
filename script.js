@@ -3,8 +3,14 @@ const botao = document.getElementById("adicionar");
 const lista = document.getElementById("lista");
 botao.addEventListener("click", function () {
 const texto = input.value;
+
+if (texto === "") {
+  return;
+}
+
 const item = document.createElement("li");
 item.textContent = texto;
 lista.appendChild(item);
+
 
 });
