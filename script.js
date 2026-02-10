@@ -21,3 +21,4 @@ const texto = input.value.trim();
   input.value = "";
 });
 
+lista.appendChild(item);
