@@ -11,9 +11,10 @@ const texto = input.value.trim();
 
   const item = document.createElement("li");
   item.textContent = texto;
-  item.addEventListener("click", function () {
-  lista.removeChild(item);
+ item.addEventListener("click", function () {
+  item.classList.toggle("concluida");
 });
+
 
   lista.appendChild(item);
 
